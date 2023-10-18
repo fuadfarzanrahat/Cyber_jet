@@ -13,44 +13,6 @@
   <link rel="stylesheet" href="assets/css/demo.css">
   <link rel="stylesheet" href="assets/css/mmenu-light.css">
   <!-- mmenu css end -->
-  <!-- slick slider css start -->
-  <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
-  <!-- slick slider css end -->
-  <!-- slick slider css start -->
-  <style>
-    .slider {
-      width: 100%;
-    }
-
-    .slick-slide {
-      margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: #0ad3ef;
-    }
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
-
-    .slick-active {
-      opacity: 1;
-    }
-
-    .slick-current {
-      opacity: 1;
-    }
-  </style>
-  <!-- slick slider css end -->
-
 </head>
 
 <body>
@@ -407,109 +369,14 @@
   </div>
   <!-- mmenu js start -->
   <script src="assets/js/mmenu-light.js"></script>
-  <script>
-    var menu = new MmenuLight(document.querySelector("#menu"), "all");
-
-    var navigator = menu.navigation({});
-    var drawer = menu.offcanvas({
-      // position: 'left'
-    });
-    //	Open the menu.
-    document
-      .querySelector('a[href="#menu"]')
-      .addEventListener("click", (evnt) => {
-        evnt.preventDefault();
-        drawer.open();
-      });
-  </script>
   <!-- mmenu js end -->
   <!-- slick slider jq start -->
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <!-- slick slider jq end -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- slick js start -->
-  <script src="assets/js/slick.js"></script>
-  <script>
-    $(document).on('ready', function () {
-      $(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 400,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
-      $(".news_slider").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        responsive: [{
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }]
-      });
-    });
-  </script>
-  <!-- slick js end -->
-  <!-- counter js start -->
-  <script>
-    $(".circle_percent").each(function () {
-      var $this = $(this),
-        $dataV = $this.data("percent"),
-        $dataDeg = $dataV * 3.6,
-        $round = $this.find(".round_per");
-      $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
-      $this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
-      $this.prop('Counter', 0).animate({
-        Counter: $dataV
-      }, {
-        duration: 2000,
-        easing: 'swing',
-        step: function (now) {
-          $this.find(".percent_text").text(Math.ceil(now) + "%");
-        }
-      });
-      if ($dataV >= 51) {
-        $round.css("transform", "rotate(" + 360 + "deg)");
-        setTimeout(function () {
-          $this.addClass("percent_more");
-        }, 1000);
-        setTimeout(function () {
-          $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
-        }, 1000);
-      }
-    });
-  </script>
-  <!-- counter js end -->
+<!-- main js start -->
+<script src="assets/js/main.js"></script>
+<!-- main js end -->
 </body>
 
 </html>

@@ -1019,6 +1019,25 @@ body {
   color: #3f64ee;
   font-size: 16px;
 }
+.get_in_touch form .input_submit {
+  display: flex;
+  justify-content: center;
+}
+.get_in_touch form input[type=submit] {
+  font-family: "Roboto";
+  border-radius: 50px;
+  font-weight: 400;
+  background-color: #21529f;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+  width: 180px;
+  height: 60px;
+  border: 0px;
+}
+.get_in_touch form input[type=submit]:hover {
+  background-color: #0ad3ef;
+}
 
 footer {
   background-repeat: no-repeat;
@@ -1251,6 +1270,9 @@ footer .footer_ending .container .bannar_text {
   font-weight: 400;
   padding-top: 15px;
   padding-right: 15px;
+}
+.team_members .team_slider .card .card-body {
+  padding: 0px;
 }
 
 .services_sction .card_row {
@@ -1548,6 +1570,7 @@ footer .footer_ending .container .bannar_text {
   font-family: "Roboto";
   color: #ffffff;
   line-height: 1.2;
+  padding-left: 10px;
   padding-top: 20px;
   width: 90%;
 }

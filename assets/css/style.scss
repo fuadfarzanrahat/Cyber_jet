@@ -301,7 +301,7 @@ $bold:600;
     padding-bottom: 30px;
 }
 
-.bannar_btn {
+.bannar_btn{
     font-family: 'Roboto';
     padding: 9px 20px;
     border-radius: 50px;
@@ -1085,6 +1085,28 @@ $bold:600;
             color: #3f64ee;
             font-size: 16px;
         }
+        .input_submit{
+           display: flex;
+           justify-content: center;
+        }
+        input[type="submit"]{           
+            font-family: 'Roboto';
+            // padding: 9px 20px;
+            border-radius: 50px;
+            font-weight: $semi_bold;
+            background-color: #21529f;
+            text-decoration: none;
+            color: $font_primary_color;
+            transition: .5s;          
+                // padding: 13px 30px;
+                width: 180px;
+                height: 60px;
+             border:0px;           
+
+            &:hover {
+                background-color: #0ad3ef;
+            }
+        }
     }
 }
 
@@ -1357,8 +1379,14 @@ footer {
             }
         }
     }
+    .team_slider{
+     .card{   
+        .card-body{
+            padding: 0px;
+        }
+     }
+    }
 }
-
 // team member css end
 // About us page css end
 // services page css start
@@ -1549,12 +1577,9 @@ footer {
         @include minwidth(600px) {
             padding: 20px;
         }
-
         .card-body {
             height: 100%;
-
         }
-
         .testmo_descrip {
             display: flex;
 
@@ -1678,7 +1703,8 @@ footer {
             font-size: 17px;
             font-family: 'Roboto';
             color: $font_primary_color;
-            line-height: 1.2;        
+            line-height: 1.2;  
+            padding-left: 10px;      
             // position: absolute;
         //    bottom: 50px;
         //     left: 20px;
