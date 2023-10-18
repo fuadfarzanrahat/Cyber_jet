@@ -47,15 +47,24 @@ $bold:600;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: sticky; 
 }
+.video-background-controls button{
+    font-size: 20px;  
+    display: none!important;
+    @include minwidth(768px) {
+     font-size: 30px;
+     display: initial!important;
+    }
+} 
 .header_bannar_overlay {
-    background-color: $secondary_section_color;
-}
-.header_overlay {
+    background-color: $secondary_section_color; 
     padding: 20px 10px;
     @include minwidth(768px) {
         padding: 30px 10px;
     }
+}
+.header_overlay { 
     .row {
         // max-width: 1140px;
         display: flex;
@@ -172,7 +181,6 @@ $bold:600;
         }
     }
 }
-
 #page {
     width: 70%;
     display: flex;
@@ -200,6 +208,17 @@ $bold:600;
         @include minwidth(1200px) {
             padding: 100px 0px;
         }
+    .bannar_buttn_box{
+        display: flex;
+        justify-content: start;
+    }
+    .bannar_heading{
+        text-align: left;
+    }
+    .bannar_text{
+        text-align: left;
+    }
+
     }
 
     .container {

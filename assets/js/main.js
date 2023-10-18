@@ -112,3 +112,11 @@
       drawer.open();
     });
 // <!-- mmenu js end -->
+// bg video js start
+jQuery(document).ready(function () {
+  jQuery('[data-vbg]').youtube_background();
+});
+document.querySelector('#vbg2').addEventListener('video-background-pause', function () {
+  console.log(arguments);
+});
+// bg video js end

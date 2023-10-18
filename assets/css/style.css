@@ -24,20 +24,30 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: sticky;
+}
+
+.video-background-controls button {
+  font-size: 20px;
+  display: none !important;
+}
+@media only screen and (min-width: 768px) {
+  .video-background-controls button {
+    font-size: 30px;
+    display: initial !important;
+  }
 }
 
 .header_bannar_overlay {
   background-color: rgba(9, 22, 80, 0.694);
-}
-
-.header_overlay {
   padding: 20px 10px;
 }
 @media only screen and (min-width: 768px) {
-  .header_overlay {
+  .header_bannar_overlay {
     padding: 30px 10px;
   }
 }
+
 .header_overlay .row {
   display: flex;
   flex-wrap: wrap;
@@ -191,6 +201,16 @@ body {
   .bannar_section .bannar_overlay {
     padding: 100px 0px;
   }
+}
+.bannar_section .bannar_overlay .bannar_buttn_box {
+  display: flex;
+  justify-content: start;
+}
+.bannar_section .bannar_overlay .bannar_heading {
+  text-align: left;
+}
+.bannar_section .bannar_overlay .bannar_text {
+  text-align: left;
 }
 .bannar_section .container .row {
   align-items: center;

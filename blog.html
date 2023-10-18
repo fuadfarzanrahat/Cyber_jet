@@ -13,155 +13,215 @@
   <link rel="stylesheet" href="assets/css/demo.css">
   <link rel="stylesheet" href="assets/css/mmenu-light.css">
   <!-- mmenu css end -->
+  <!-- bg_vid css start-->
+  <style>
+    .example-marquee {
+      position: relative;
+    }
+
+    .content {
+      z-index: 1;
+      position: relative;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .video-background-controls button {
+      font-size: 32px;
+      display: inline-block;
+      padding: 0px;
+      margin: 0px;
+      height: 32px;
+      width: 32px;
+      border-radius: 16px;
+      line-height: 32px;
+      border: none;
+      background: none;
+      -webkit-appearance: none;
+      color: white;
+      filter: drop-shadow(0px 0px 1px black);
+      cursor: pointer;
+      opacity: 1;
+      transition: all 250ms ease-in-out;
+      margin-left: 10px;
+    }
+
+    .video-background-controls button:hover {
+      opacity: 0.5;
+    }
+  </style>
+  <!-- bg video css end -->
+  <!-- bg_video js start -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.youtube-background.js"></script>
+  <!-- bg_video js end-->
 </head>
+
 <body>
   <div class="main">
     <div class="header_bannar_bg_img" style="background-image: url(assets/images/hd_ft.avif)">
-      <div class="header_bannar_overlay">
-        <!-- header section start -->
-        <header>
-          <div class="header_overlay">
-            <div class="container">
-              <div class="row">
-                <div class="header_left">
-                  <img class="cyber_logo" src="assets/images/hdr_logo.png" alt="Cyber Jet Logo"> <span
-                    class="cyber_jet">Cyber<b>Jet</b> </span>
-                </div>
-                <div class="header_menu">
-                  <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class="sub_menu_parent"><a href="services.html">Services</a><i
-                        class="fa-solid fa-caret-down"></i>
-                      <ul class="submenu_ul">
-                        <li><a href="#">Service 1</a></li>
-                        <li><a href="#">Service 2</a></li>
-                        <li><a href="#">Service 3</a></li>
-                        <li><a href="#">Service 4</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-                </div>
-                <!-- mmenu start -->
-                <div id="page">
-                  <div class="headr">
-                    <a href="#menu"><span><i class="fa-solid fa-bars"></i></span></a>
-                    <nav id="menu">
-                      <!-- <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Features</a></li>
-                      </ul> -->
-                      <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="sub_menu_parent"><a href="services.html">Services</a><i
-                            class="fa-solid fa-caret-down"></i>
-                          <ul class="submenu_ul">
-                            <li><a href="#">Service 1</a></li>
-                            <li><a href="#">Service 2</a></li>
-                            <li><a href="#">Service 3</a></li>
-                            <li><a href="#">Service 4</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                      </ul>
-                    </nav>
+      <!-- bg video html start -->
+      <div class="example-marquee">
+        <div id="vbg-1" data-vbg="https://www.youtube.com/watch?v=LXb3EKWsInQ&t=12s"
+          data-vbg-poster="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg"
+          data-vbg-play-button="true" data-vbg-mute-button="true"></div>
+        <div class="content">
+          <div class="inner">
+            <div class="header_bannar_overlay" style="margin: auto;">
+              <!-- header section start -->
+              <header>
+                <div class="header_overlay">
+                  <div class="container">
+                    <div class="row">
+                      <div class="header_left">
+                        <img class="cyber_logo" src="assets/images/hdr_logo.png" alt="Cyber Jet Logo"> <span
+                          class="cyber_jet">Cyber<b>Jet</b> </span>
+                      </div>
+                      <div class="header_menu">
+                        <ul>
+                          <li><a href="home.html">Home</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li class="sub_menu_parent"><a href="services.html">Services</a><i
+                              class="fa-solid fa-caret-down"></i>
+                            <ul class="submenu_ul">
+                              <li><a href="#">Service 1</a></li>
+                              <li><a href="#">Service 2</a></li>
+                              <li><a href="#">Service 3</a></li>
+                              <li><a href="#">Service 4</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="pricing.html">Pricing</a></li>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                      </div>
+                      <!-- mmenu start -->
+                      <div id="page">
+                        <div class="headr">
+                          <a href="#menu"><span><i class="fa-solid fa-bars"></i></span></a>
+                          <nav id="menu">
+                            <!-- <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Contact</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Blog</a></li>
+                              <li><a href="#">Reviews</a></li>
+                              <li><a href="#">Features</a></li>
+                            </ul> -->
+                            <ul>
+                              <li><a href="home.html">Home</a></li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li class="sub_menu_parent"><a href="services.html">Services</a><i
+                                  class="fa-solid fa-caret-down"></i>
+                                <ul class="submenu_ul">
+                                  <li><a href="#">Service 1</a></li>
+                                  <li><a href="#">Service 2</a></li>
+                                  <li><a href="#">Service 3</a></li>
+                                  <li><a href="#">Service 4</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="pricing.html">Pricing</a></li>
+                              <li><a href="blog.html">Blog</a></li>
+                              <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                      <!-- mmenu end -->
+                    </div>
                   </div>
                 </div>
-                <!-- mmenu end -->
-              </div>
-            </div>
-          </div>
-        </header>
-        <!-- header section end -->
-        <!-- our team section start -->
-        <section class="partner_section what_we_do about_us our_team our_news our_blog">
-          <div class="partner_overlay">
-            <div class="container">
-              <div class="row">
-                <h4 class="wer_working_with">Our Blogs</h4>
-                <p class="bannar_text abut_text">Dolor sit amet consectetur adipisicing elit. Illum quia atque
-                  accusamus iste provident nisi, ad corrupti culpa officiis dolore modi, excepturi non molestiae
-                  facilis.</p>
-                <div class="row our_team_row">
-                  <div class="col-md-4">
-                    <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
-                    <div class="our_team_info">
-                      <h2 class="our_team_heading">
-                       <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
-                      </h2>
-                      <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
-                      <a href="blog_single.html" class="card-link">Read More <i class="fa-solid fa-angle-right"></i></a>
+              </header>
+              <!-- header section end -->
+              <!-- our team section start -->
+              <section class="partner_section what_we_do about_us our_team our_news our_blog">
+                <div class="partner_overlay">
+                  <div class="container">
+                    <div class="row">
+                      <h4 class="wer_working_with">Our Blogs</h4>
+                      <p class="bannar_text abut_text">Dolor sit amet consectetur adipisicing elit. Illum quia atque
+                        accusamus iste provident nisi, ad corrupti culpa officiis dolore modi, excepturi non molestiae
+                        facilis.</p>
+                      <div class="row our_team_row">
+                        <div class="col-md-4">
+                          <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
+                          <div class="our_team_info">
+                            <h2 class="our_team_heading">
+                              <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
+                            </h2>
+                            <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
+                            <a href="blog_single.html" class="card-link">Read More <i
+                                class="fa-solid fa-angle-right"></i></a>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
+                          <div class="our_team_info">
+                            <h2 class="our_team_heading">
+                              <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
+                            </h2>
+                            <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
+                            <a href="blog_single.html" class="card-link">Read More <i
+                                class="fa-solid fa-angle-right"></i></a>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
+                          <div class="our_team_info">
+                            <h2 class="our_team_heading">
+                              <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
+                            </h2>
+                            <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
+                            <a href="blog_single.html" class="card-link">Read More <i
+                                class="fa-solid fa-angle-right"></i></a>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
+                          <div class="our_team_info">
+                            <h2 class="our_team_heading">
+                              <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
+                            </h2>
+                            <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
+                            <a href="blog_single.html" class="card-link">Read More <i
+                                class="fa-solid fa-angle-right"></i></a>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
+                          <div class="our_team_info">
+                            <h2 class="our_team_heading">
+                              <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
+                            </h2>
+                            <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
+                            <a href="blog_single.html" class="card-link">Read More <i
+                                class="fa-solid fa-angle-right"></i></a>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
+                          <div class="our_team_info">
+                            <h2 class="our_team_heading">
+                              <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
+                            </h2>
+                            <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
+                            <a href="blog_single.html" class="card-link">Read More <i
+                                class="fa-solid fa-angle-right"></i></a>
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
-                  </div>     
-                  <div class="col-md-4">
-                    <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
-                    <div class="our_team_info">
-                      <h2 class="our_team_heading">
-                        <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
-                       </h2>
-                      <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
-                      <a href="blog_single.html" class="card-link">Read More <i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                  </div>     
-                  <div class="col-md-4">
-                    <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
-                    <div class="our_team_info">
-                      <h2 class="our_team_heading">
-                        <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
-                       </h2>
-                      <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
-                      <a href="blog_single.html" class="card-link">Read More <i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                  </div>     
-                  <div class="col-md-4">
-                    <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
-                    <div class="our_team_info">
-                      <h2 class="our_team_heading">
-                        <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
-                       </h2>
-                      <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
-                      <a href="blog_single.html" class="card-link">Read More <i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                  </div>     
-                  <div class="col-md-4">
-                    <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
-                    <div class="our_team_info">
-                      <h2 class="our_team_heading">
-                        <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
-                       </h2>
-                      <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
-                      <a href="blog_single.html" class="card-link">Read More <i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                  </div>     
-                  <div class="col-md-4">
-                    <a href="blog_single.html"> <img src="assets/images/blog.jpg" alt="Cyber jet blog"></a>
-                    <div class="our_team_info">
-                      <h2 class="our_team_heading">
-                        <a href="blog_single.html" style="text-decoration: none;"> Blog Title</a>
-                       </h2>
-                      <p class="card-text">Three Factors that Make Honeywell Productivity Solutions Different</p>
-                      <a href="blog_single.html" class="card-link">Read More <i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                  </div>     
-         
+                  </div>
                 </div>
-              </div>
+              </section>
+              <!-- our team section end -->
             </div>
           </div>
-        </section>
-        <!-- our team section end -->
+        </div>
       </div>
+      <!-- bg video html end -->
     </div>
     <div class="lets_get_sec_bg" style="background-image: url(assets/images/What_we.avif);">
       <div class="lets_get_sec_overlay">
@@ -250,7 +310,7 @@
                 <form action="#" method="post">
                   <div class="input_email">
                     <input type="email" name="useremail" placeholder="Enter your email"><i
-                    class="fa-solid fa-paper-plane"></i>
+                      class="fa-solid fa-paper-plane"></i>
                   </div>
 
                   <div class="input_checkbox"> <input type="checkbox" id="terms"> <label for="terms"> i agree to the
@@ -273,13 +333,12 @@
   <script src="assets/js/mmenu-light.js"></script>
   <!-- mmenu js end -->
   <!-- slick slider jq start -->
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
   <!-- slick slider jq end -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- main js start -->
-<script src="assets/js/main.js"></script>
-<!-- main js end -->
-
+  <!-- main js start -->
+  <script src="assets/js/main.js"></script>
+  <!-- main js end -->
 </body>
 
 </html>
