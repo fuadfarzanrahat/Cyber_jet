@@ -20,6 +20,18 @@ body {
   padding: 0px;
 }
 
+:root {
+  --primary-color: rgba(11, 24, 93, 0.762);
+  --secondary-color: rgba(9, 22, 80, 0.694);
+  --third-color: rgb(9, 22, 80);
+}
+
+.dark_theme {
+  --primary-color: black;
+  --secondary-color: black;
+  --third-color: black;
+}
+
 .header_bannar_bg_img {
   background-repeat: no-repeat;
   background-position: center;
@@ -39,7 +51,7 @@ body {
 }
 
 .header_bannar_overlay {
-  background-color: rgba(9, 22, 80, 0.694);
+  background-color: var(--secondary-color);
   padding: 20px 10px;
 }
 @media only screen and (min-width: 768px) {
@@ -147,6 +159,23 @@ body {
   color: #ffffff;
 }
 
+.for_darkmood {
+  position: relative;
+}
+.for_darkmood #moon_png {
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+  left: 80px;
+  top: -20px;
+}
+@media only screen and (min-width: 768px) {
+  .for_darkmood #moon_png {
+    left: 20px;
+    top: -20px;
+  }
+}
+
 .header_menu ul li:hover {
   background-color: #0ad3ef;
 }
@@ -162,7 +191,7 @@ body {
   display: none;
   position: absolute;
   width: 150px;
-  background-color: rgba(9, 22, 80, 0.694);
+  background-color: var(--secondary-color);
   top: 43px;
   right: -50px;
 }
@@ -336,7 +365,7 @@ body {
   background-position: center;
 }
 .partner_to_what_we_do_bgimage .partner_to_what_we_do_overlay {
-  background-color: rgba(11, 24, 93, 0.762);
+  background-color: var(--primary-color);
 }
 
 .partner_section .partner_overlay {
@@ -562,7 +591,7 @@ body {
 }
 .service_section .service_overlay {
   padding: 30px 0px;
-  background-color: rgba(9, 22, 80, 0.694);
+  background-color: var(--secondary-color);
 }
 @media only screen and (min-width: 768px) {
   .service_section .service_overlay {
@@ -758,7 +787,7 @@ body {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  background: rgb(9, 22, 80);
+  background: var(--third-color);
   z-index: 3;
   border-radius: 50%;
 }
@@ -784,7 +813,7 @@ body {
   background-size: cover;
 }
 .static_offer_news .static_offer_news_overlay {
-  background-color: rgba(9, 22, 80, 0.694);
+  background-color: var(--secondary-color);
 }
 
 .statics_section .row .bannar_text {
@@ -965,7 +994,7 @@ body {
   background-size: cover;
 }
 .lets_get_sec_bg .lets_get_sec_overlay {
-  background-color: rgba(11, 24, 93, 0.762);
+  background-color: var(--primary-color);
 }
 
 .lets_talk .row {
@@ -1065,7 +1094,7 @@ footer {
   background-position: center;
 }
 footer .foote_overlay {
-  background-color: rgba(9, 22, 80, 0.694);
+  background-color: var(--secondary-color);
 }
 footer .foote_overlay .header_left {
   display: flex;
@@ -1450,7 +1479,7 @@ footer .footer_ending .container .bannar_text {
   background-size: cover;
 }
 .testimonial_section .partner_overlay {
-  background-color: rgba(9, 22, 80, 0.694);
+  background-color: var(--secondary-color);
   padding-top: 30px;
 }
 @media only screen and (min-width: 768px) {

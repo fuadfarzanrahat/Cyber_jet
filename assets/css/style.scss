@@ -27,14 +27,25 @@ body {
     margin: auto;
     padding: 0px;
 }
+
 // font color 
 $font_primary_color : #ffffff;
 $font_secondary_color: #bfc8e9;
 $heading_color : #0cd3f0;
-// section color
-$primary_section_color:rgba(11, 24, 93, 0.762);
-$secondary_section_color: rgba(9, 22, 80, 0.694);
-$most_usable_section_color:rgb(9, 22, 80);
+// section 
+:root{
+--primary-color: rgba(11, 24, 93, 0.762);
+--secondary-color:  rgba(9, 22, 80, 0.694);
+--third-color: rgb(9, 22, 80);
+}
+.dark_theme{
+    --primary-color: black;
+--secondary-color: black;
+--third-color: black;
+}
+// $primary_section_color:rgba(11, 24, 93, 0.762);
+// $secondary_section_color: rgba(9, 22, 80, 0.694);
+// $most_usable_section_color:rgb(9, 22, 80);
 $card_color: rgba(23, 36, 93, 0.811);
 // hover color
 $button_hover_color:#0ad3ef;
@@ -58,7 +69,8 @@ $bold:600;
     }
 } 
 .header_bannar_overlay {
-    background-color: $secondary_section_color; 
+    // background-color: $secondary_section_color; 
+    background-color: var(--secondary-color); 
     padding: 20px 10px;
     @include minwidth(768px) {
         padding: 30px 10px;
@@ -148,7 +160,23 @@ $bold:600;
             transition: 1s linear;
         }
     }
+ 
 }
+   .for_darkmood{
+        position: relative;
+        #moon_png{
+            width: 40px;
+            cursor:pointer;
+            position: absolute;
+            left: 80px;
+            top: -20px;
+            @include minwidth(768px) {      
+                left: 20px;
+                top: -20px;
+            }
+         
+        }
+    }
 
 .header_menu ul li:hover {
     background-color: #0ad3ef;
@@ -166,7 +194,8 @@ $bold:600;
         display: none;
         position: absolute;
         width: 150px;
-        background-color: $secondary_section_color;
+        // background-color: $secondary_section_color;
+        background-color: var(--secondary-color);
         top: 43px;
         right: -50px;
 
@@ -347,7 +376,8 @@ $bold:600;
     background-position: center;
 
     .partner_to_what_we_do_overlay {
-        background-color: $primary_section_color;
+        // background-color: $primary_section_color;
+        background-color: var(--primary-color);
     }
 }
 
@@ -592,7 +622,8 @@ $bold:600;
 
     .service_overlay {
         padding: 30px 0px;
-        background-color: $secondary_section_color;
+        // background-color: $secondary_section_color;
+        background-color: var(--secondary-color);
         @include minwidth(768px) {
             padding: 60px 0px;
         }
@@ -795,7 +826,8 @@ $bold:600;
         left: 10px;
         right: 10px;
         bottom: 10px;
-        background: $most_usable_section_color;  
+        // background: $most_usable_section_color;  
+        background: var(--third-color);  
         z-index: 3;
         border-radius: 50%;
     }
@@ -822,7 +854,8 @@ $bold:600;
     background-position: center;
     background-size: cover;
     .static_offer_news_overlay {
-        background-color: $secondary_section_color;
+        // background-color: $secondary_section_color;
+        background-color: var(--secondary-color);
     }
 }
 
@@ -1028,7 +1061,8 @@ $bold:600;
     background-size: cover;
 
     .lets_get_sec_overlay {
-        background-color: $primary_section_color;
+        // background-color: $primary_section_color;
+        background-color: var(--primary-color);
     }
 }
 
@@ -1136,7 +1170,8 @@ footer {
     background-size: cover;
     background-position: center;
     .foote_overlay {
-        background-color: $secondary_section_color;
+        // background-color: $secondary_section_color;
+        background-color: var(--secondary-color);
         .header_left {      
             // padding-left: 45px;
             display: flex;
@@ -1582,7 +1617,8 @@ footer {
     background-size: cover;
 
     .partner_overlay {
-        background-color: $secondary_section_color;
+        // background-color: $secondary_section_color;
+        background-color: var(--secondary-color);
         padding-top: 30px;
         @include minwidth(768px) {
               padding-top: 50px;
