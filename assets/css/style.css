@@ -28,7 +28,7 @@ body {
 
 .dark_theme {
   --primary-color: black;
-  --secondary-color: black;
+  --secondary-color: rgba(0, 0, 0, 0.827);
   --third-color: black;
 }
 
@@ -163,14 +163,15 @@ body {
   position: relative;
 }
 .for_darkmood #moon_png {
-  width: 40px;
+  width: 25px;
   cursor: pointer;
   position: absolute;
   left: 80px;
-  top: -20px;
+  top: -12px;
 }
 @media only screen and (min-width: 768px) {
   .for_darkmood #moon_png {
+    width: 40px;
     left: 20px;
     top: -20px;
   }
@@ -402,6 +403,22 @@ body {
     display: initial;
   }
 }
+.partner_section .partner_overlay .slick-prev {
+  left: -11px;
+}
+@media only screen and (min-width: 600px) {
+  .partner_section .partner_overlay .slick-prev {
+    left: -15px;
+  }
+}
+.partner_section .partner_overlay .slick-next {
+  right: -11px;
+}
+@media only screen and (min-width: 600px) {
+  .partner_section .partner_overlay .slick-next {
+    right: -15px;
+  }
+}
 
 .partner_heding {
   font-size: 18x;
@@ -602,6 +619,11 @@ body {
   max-width: 1530px;
   margin-left: auto;
   margin-right: 0px;
+}
+@media only screen and (min-width: 1921px) {
+  .service_section .container {
+    margin-right: auto;
+  }
 }
 .service_section .container .row {
   max-width: 100%;
@@ -926,13 +948,16 @@ body {
   background-color: rgba(0, 0, 0, 0.173);
   position: relative;
 }
+.our_news .card .card-body {
+  padding: 5px;
+}
 .our_news .card .card-body img {
   opacity: 0.6;
 }
 .our_news .card .card-bdy_content {
   position: absolute;
   bottom: 30px;
-  left: 25px;
+  left: 20px;
   padding: 10px;
 }
 .our_news .card .card-text {
@@ -986,6 +1011,12 @@ body {
 }
 .our_news .news_slidr_box {
   border-radius: 10px;
+}
+.our_news .slick-prev {
+  left: -1px;
+}
+.our_news .slick-next {
+  right: -1px;
 }
 
 .lets_get_sec_bg {
@@ -1080,9 +1111,15 @@ body {
   text-decoration: none;
   color: #ffffff;
   transition: 0.5s;
-  width: 180px;
-  height: 60px;
+  width: 120px;
+  height: 40px;
   border: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .get_in_touch form input[type=submit] {
+    width: 180px;
+    height: 60px;
+  }
 }
 .get_in_touch form input[type=submit]:hover {
   background-color: #0ad3ef;

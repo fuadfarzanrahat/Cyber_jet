@@ -26,6 +26,7 @@
               <div class="row">
                 <div class="header_left">
                   <img class="cyber_logo" src="assets/images/hdr_logo.png" alt="Cyber Jet Logo">  <span class="cyber_jet">Cyber<b>Jet</b> </span>
+                  <div class="for_darkmood"> <img src="assets/images/moon.png" id="moon_png" alt="For dark mood"></div>
                 </div>
                 <div class="header_menu">
                   <ul>
@@ -377,6 +378,20 @@
 <!-- main js start -->
 <script src="assets/js/main.js"></script>
 <!-- main js end -->
+<!-- dark mood js start -->
+<script>
+  var moon_png = document.getElementById("moon_png");
+  moon_png.onclick = function(){
+    document.body.classList.toggle("dark_theme");
+    if(document.body.classList.contains("dark_theme")){
+      moon_png.src="assets/images/sun.png";
+    }else{
+      moon_png.src="assets/images/moon.png";
+    }
+  }
+</script>
+<!-- dark mood js end -->
+
 </body>
 
 </html>
