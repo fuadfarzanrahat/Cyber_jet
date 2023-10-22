@@ -144,19 +144,16 @@ $bold:600;
             border-radius: 50px;
             position: relative;
             @include minwidth(992px) {
-                padding: 8px 18px;
+                padding: 8px 10px;
             }
-
             @include minwidth(1200px) {
                 font-size: 17px;
-                padding: 10px 25px;
+                padding: 10px 15px;
             }
-
             a {
                 text-decoration: none;
                 color: $font_primary_color;
             }
-
             transition: 1s linear;
         }
     }
@@ -183,40 +180,50 @@ $bold:600;
                 top: -12px;
             }   
             @include minwidth(768px) {     
-                width: 40px; 
+                width: 30px; 
                 left: 560px;
-                top: -1px;
+                top: -10px;
             }   
-            @include minwidth(920px) {     
-                width: 40px; 
-                left: 630px;
-                top: -1px;
+            @include minwidth(920px) {  
+                left: 630px;            
             }   
-            @include minwidth(1000px) {     
-                width: 40px; 
-                left: 750px;
-                top: -1px;
+            @include minwidth(1000px) {  
+                left: 750px;            
             }   
-            @include minwidth(1100x) {     
-                width: 40px; 
-                left: 800px;
-                top: -1px;
+            @include minwidth(1100x) {    
+                left: 800px;            
             }   
             @include minwidth(1200px) {     
-                width: 40px; 
-                left: 900px;
-                top: -10px;
+                left: 900px;               
             }   
             @include minwidth(1240px) {                 
-             left: 950px;
-                top: -10px;
+             left: 950px;              
             }       
         }
     }
 
-.header_menu ul li:hover {
-    background-color: #0ad3ef;
+// .header_menu ul li:hover {
+//     background-color: #0ad3ef;
+// }
+.header_menu ul li:hover{ 
+    a{
+        color: $button_hover_color;                 
+     }
 }
+.header_menu li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: $button_hover_color;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+.header_menu  li a:hover:before{
+    width: 100%;
+  }
 .sub_menu_parent {
     position: relative;
 
@@ -405,6 +412,14 @@ $bold:600;
 
 // bannar section css end
 // partner Section css start
+.emergence_need_help{
+    .wer_working_with{
+        text-align: start!important;
+    }
+    .row .col-md-4{
+        text-align: center;
+    } 
+}
 .partner_to_what_we_do_bgimage {
     background-repeat: no-repeat;
     background-size: cover;
@@ -1214,7 +1229,7 @@ $bold:600;
              border:0px;     
              @include minwidth(768px) {
                 width: 180px;
-                height: 60px;
+                height: 40px;
             }      
 
             &:hover {
@@ -1670,7 +1685,12 @@ footer {
         }
     }
 }
-
+.hire{
+    padding-bottom: 0px!important;
+    .partner_overlay{
+        padding-bottom: 0px;
+    }
+}
 // testimonial section css start
 .testimonial_section {
     background-repeat: no-repeat;
@@ -1758,21 +1778,22 @@ footer {
 // our_team Page css end
 // blog page css start
 .our_blog{
-.col-md-8{
+.row{
      .wer_working_with{
-        text-align: left;
+        // text-align: left;
         width: 100%;
-        padding-left: 20px;
-        padding-bottom: 0px;
+        // padding-left: 20px;
+        padding: 0 0 30px 0;
      }
      .abut_text{
-        text-align: left;
+        // text-align: left;
         width: 100%;
-        padding-left: 20px;;
+        // padding-left: 20px;;
+        padding: 0 0 20px 0;
      }
     }
-    .col-md-6{  
-        width: 100%;
+    .col-md-4{  
+        // width: 100%;
         position: relative;
    
        a img{
@@ -1784,7 +1805,7 @@ footer {
         }
         margin-bottom: 30px;            
         @include minwidth(992px) {
-      width: 50%;
+    //   width: 50%;
         }
         .our_team_info {
             position: absolute;
@@ -1802,185 +1823,192 @@ footer {
         i{
             font-size: 12px;
         }
+    } 
+}
+.blog_side_bar{    
+    width: 100%;      
+    margin: auto;         
+    @include minwidth(768px) {
+        width: 25.5%;               
+        margin-left: 20px;
     }
-    .blog_side_bar{       
-        margin-top: 40px;
-        width: 100%;      
-        margin: 20px auto;         
-        @include minwidth(768px) {
-            width: 25.5%;               
-            margin-left: 10px;
-        }
-        @include minwidth(1200px) {
-            width: 30.5%;   
-            margin-left: 30px;
-        }
-        .latest_tweets{    
-            border-top: 2px solid $button_hover_color; 
-            border-bottom: 2px solid $button_hover_color; 
-            padding-bottom: 20px;
-            .latest_tweets_heding{         
+    @include minwidth(1200px) {
+        width: 30.5%;   
+        margin-left: 30px;
+    }
+    .latest_tweets{    
+        border-top: 2px solid $button_hover_color; 
+        border-bottom: 2px solid $button_hover_color; 
+        padding-bottom: 20px;
+        .latest_tweets_heding{         
+            font-size: 18px;
+            font-family: 'Roboto';
+            color: $font_secondary_color;
+            line-height: 1.3;
+            text-align: start;
+            margin: 0px 0 10px 0px;
+            padding: 10px 0 0 20px;
+            @include minwidth(768px) {             
+                font-size: 18px;
+            }  
+            @include minwidth(992px) {
                 font-size: 28px;
-                font-family: 'Roboto';
-                color: $font_secondary_color;
-                line-height: 1.3;
-                text-align: start;
-                margin: 0px 0 10px 0px;
-                padding: 20px 0 0 20px;
-                @include minwidth(768px) {             
-                    font-size: 18px;
-                }  
-                @include minwidth(992px) {
-                    font-size: 28px;
-                }  
-            }
-            .latest_tweet_box{
-                display: flex;
-                flex-wrap: wrap;
-                background-color: $card_color;
+            }  
+        }
+        .latest_tweet_box{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: $card_color;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            width: 100%;
+           box-shadow: 0px 0px 4px 3px var(--third-color);
+            padding-bottom: 20px;   
+            width: 100%;   
+            @include minwidth(768px) {
+               padding: 5px;
+            }                  
+            @include minwidth(1200px) {
                 padding-top: 30px;
                 padding-bottom: 10px;
                 padding-left: 20px;
-                width: 100%;
-               box-shadow: 0px 0px 4px 3px var(--third-color);
-                padding-bottom: 20px;   
-                width: 100%;   
-                @include minwidth(768px) {
-                   padding: 5px;
-                }                  
-                @include minwidth(1200px) {
-                    padding-top: 30px;
-                    padding-bottom: 10px;
-                    padding-left: 20px;
-                }                  
-            }            
-            .latest_tweet_icone{
-                font-size: 15px;              
-                color: $font_secondary_color;    
-                width: 10%;   
-                @include minwidth(992px) {
-                    font-size: 20px;    
-                }                     
-            }
-            .latest_tweet_description{
-                width: 90%;
-                padding-left: 10px;   
-                @include minwidth(992px) {
-                    padding-left: 20px;  
-                }
-                a{
-                    text-align: start;
-                    color: $button_hover_color;
-                    display: inline-block;
-                    width: 100%;
-                }           
-             }
-            a, .latest_tweet_para{
-                font-size: 14px;
-                font-family: 'Roboto';
-                color: $font_secondary_color;
-                line-height: 1.3;
-                text-align: start;
-                margin: 0px;
-                padding: 0px;
-                text-decoration: none;
-                @include minwidth(992px) {
-                    font-size: 16px;
-                }
-            }
-        }  
-        .popular_posts{      
-            border-top: 0px;   
-            .latest_tweet_icone{
-                width: 30%;
-                @include minwidth(768px) {
-                    width: 100%;   
-                    padding-bottom: 10px;               
-                 }
-                @include minwidth(992px) {
-                    width: 30%;
-                    padding-bottom: 0px;
-                 }
-            }
-            .latest_tweet_description{
-                width: 70%;
-                @include minwidth(768px) {
-                    width: 100%;                  
-                 }
-                @include minwidth(992px) {
-                    width: 70%;
-                 }
-                .latest_news_comment{
-                    display: flex;
-                    padding-top: 10px;
-                    .latest_tweet_para{
-                        margin: 0px;
-                    //   padding-left: 10px;
-                    }
-                    i{
-                        color: $button_hover_color;
-                        font-size: 18px;
-                        padding-right: 10px;
-                    }
-                }
-            }
-            .latest_tweet_box{
-                align-items: center;
-                padding-bottom: 20px;
-                @include minwidth(768px) {
-                 display: block;
-                 text-align: center;
-                }
-                @include minwidth(992px) {
-                   display: flex;
-                }
-            }
-        } 
-        .categories{
-            border-top: 0px;
-            .latest_tweet_description{
-                box-shadow:0px 0px 10px 2px var(--third-color);
-                padding: 10px;
-            }
-        }
-        .tages{
-            border-top: 0px;      
-            .latest_tweet_box{
-                display: inline-block;
-                max-width: 60px;
-                text-align: center;
-                padding: 10px;
-                border-radius: 10px;
-                margin-right: 10px;
-                margin-bottom: 10px;
-            }
-        }
-        .side_bar_search{
-            border: 0px;
-            .tag_box{
-                box-shadow:0px 0px 10px 2px var(--third-color);
-                text-align: left;
-                a{
-                    position: relative;
-                    i{
-                        position: absolute;
-                        font-size: 25px;
-                        color: $font_primary_color;
-                        right: 10px;
-                        top: 1px;
-                    }
-                }               
-            }
-            input{
-                background-color: $card_color;
-                width: 100%;
-                padding: 15px 10px;
-            }
-            input::placeholder{
-            font-size: 20px;  
+            }                  
+        }            
+        .latest_tweet_icone{
+            font-size: 15px;              
             color: $font_secondary_color;    
-            }           
+            width: 10%;   
+            @include minwidth(992px) {
+                font-size: 20px;    
+            }                     
         }
+        .latest_tweet_description{
+            width: 90%;
+            padding-left: 10px;   
+            @include minwidth(992px) {
+                padding-left: 20px;  
+            }
+            a{
+                text-align: start;
+                color: $button_hover_color;
+                display: inline-block;
+                width: 100%;
+            }           
+         }
+        a, .latest_tweet_para{
+            font-size: 14px;
+            font-family: 'Roboto';
+            color: $font_secondary_color;
+            line-height: 1.3;
+            text-align: start;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            @include minwidth(992px) {
+                font-size: 16px;
+            }
+        }
+    }  
+    .popular_posts{      
+        border-top: 0px;   
+        .latest_tweet_icone{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+            @include minwidth(768px) {
+                width: 100%;   
+                padding-bottom: 10px;               
+             }
+            @include minwidth(992px) {
+                width: 30%;
+                padding-bottom: 0px;
+             }
+        }
+        .latest_tweet_description{
+            width: 70%;
+            @include minwidth(768px) {
+                width: 100%;                  
+             }
+            @include minwidth(992px) {
+                width: 70%;
+             }
+            .latest_news_comment{
+                display: flex;
+                padding-top: 10px;
+                .latest_tweet_para{
+                    margin: 0px;
+                //   padding-left: 10px;
+                }
+                i{
+                    color: $button_hover_color;
+                    font-size: 18px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        .latest_tweet_box{
+            align-items: center;
+            padding-bottom: 20px;
+            @include minwidth(768px) {
+             display: block;
+             text-align: center;
+            }
+            @include minwidth(992px) {
+               display: flex;
+            }
+        }
+    } 
+    .categories{
+        border-top: 0px;
+        .latest_tweet_description{
+            box-shadow:0px 0px 10px 2px var(--third-color);
+            padding: 10px;
+        }
+    }
+    .tages{
+        border-top: 0px;      
+        .latest_tweet_box{
+            display: inline-block;
+            max-width: 60px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .side_bar_search{
+        border: 0px;
+        .tag_box{
+            box-shadow:0px 0px 10px 2px var(--third-color);
+            text-align: left;
+            a{
+                position: relative;
+                i{
+                    position: absolute;
+                    font-size: 25px;
+                    color: $font_primary_color;
+                    right: 10px;
+                    top: -3px;
+                }
+            }               
+        }
+        input{
+            background-color: $card_color;
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid $button_hover_color;
+            border-radius: 50px;
+            @include minwidth(992px) {
+                padding: 15px 10px;
+             }
+        }
+        input::placeholder{
+        font-size: 20px;  
+        color: $font_secondary_color;    
+        }           
     }
 }
 // blog page css end
@@ -1999,7 +2027,7 @@ footer {
     }
     .blog_heding{    
         margin: 0px;
-        padding: 0px 0 0 10px;
+        padding: 10px 0 0 10px;
         font-size: 28px;
         font-family: 'Roboto';
         color: $font_primary_color;
@@ -2015,7 +2043,7 @@ footer {
     }    
     .blog_image_with_text{
         position: relative;    
-        padding: 30px 0px;   
+        // padding: 30px 0px;   
         img{
             width: 100%;
             opacity: .5;
@@ -2027,27 +2055,21 @@ footer {
             font-size: 17px;
             font-family: 'Roboto';
             color: $font_primary_color;
-            line-height: 1.2;  
-            padding-left: 10px;      
-            // position: absolute;
-        //    bottom: 50px;
-        //     left: 20px;
-        padding-top: 20px;
+            line-height: 1.2;         
+        padding: 20px 0 20px 10px;
             width: 90%;
             @include minwidth(600px) {
                 font-size: 22px;               
             }
             @include minwidth(992px) {
                 font-size: 28px;
-                text-align: left;
-                width: 60%;
-                // left: 50px;
+                text-align: left;          
             }
         }
     }
     .blog_details_text{
         margin: 0px;      
-        padding-left: 10px;
+        padding: 20px 0px 20px 10px;
         font-size: 15px;
         font-family: 'Roboto';
         color: $font_primary_color;
@@ -2059,6 +2081,58 @@ footer {
         
         @include minwidth(1200px) {
             font-size: 18px;
+        }
+    }
+    .bs_boxes_parent{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        @include minwidth(992px) {
+     flex-wrap: wrap;
+     overflow-x: unset;
+
+        }
+    }
+    .blog_single_page_boxes{
+     min-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $card_color;
+        margin-top: 20px;
+        margin-right: 20px;
+        padding: 30px;
+        align-items: center;
+        @include minwidth(992px) {
+   min-width: unset;
+   width: 45%;
+               }
+        &:hover{
+            background-color: $button_hover_color;
+            .bs_icon{
+                width: 40%;
+                i{
+                    color: $font_primary_color;             
+                }
+            }        
+        }
+        .bs_icon{
+            width: 40%;
+            i{
+                color: $font_secondary_color;
+                font-size: 55px;
+            }
+        }
+        .bs_text{
+            width: 60%;
+            // font-size: 20px;
+            font-size: 22px;
+            font-family: 'Roboto';
+            color: $font_primary_color;
+            line-height: 1.3;
+            text-align: start;
+            margin: 0px;
+            padding: 0px;
         }
     }
 }
