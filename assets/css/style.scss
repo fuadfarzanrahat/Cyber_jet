@@ -152,7 +152,7 @@ $bold:600;
             }
             a {
                 text-decoration: none;
-                color: $font_primary_color;
+                color: $font_primary_color;              
             }
             transition: 1s linear;
         }
@@ -207,14 +207,17 @@ $bold:600;
 // }
 .header_menu ul li:hover{ 
     a{
-        color: $button_hover_color;                 
+        color: $button_hover_color;   
+     }
+     i{
+        color: $button_hover_color;
      }
 }
 .header_menu li a::before{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 12px;
     height: 3px;
     width: 0%;
     background: $button_hover_color;
@@ -222,7 +225,7 @@ $bold:600;
     transition: all 0.4s ease;
 }
 .header_menu  li a:hover:before{
-    width: 100%;
+    width: 70%;
   }
 .sub_menu_parent {
     position: relative;
@@ -235,14 +238,16 @@ $bold:600;
     .submenu_ul {
         display: none;
         position: absolute;
-        width: 150px;
+        width: 250px;
         // background-color: $secondary_section_color;
         background-color: var(--secondary-color);
         top: 43px;
         right: -50px;
-
+        li a:hover:before{
+            width: 0%;
+          }
         li:hover {
-            background-color: unset;
+            background-color: unset;        
         }
     }
 
@@ -430,7 +435,6 @@ $bold:600;
         background-color: var(--primary-color);
     }
 }
-
 .partner_section {
     .partner_overlay {
         padding: 30px 0px;
@@ -2137,3 +2141,45 @@ footer {
     }
 }
 // blog single page css end
+// critical problem page css start
+.critical_problem_solution{
+    .blog_side_bar{    
+        margin-top: 0px;
+        margin-bottom: auto;
+    }
+}
+.critical_problem_archive{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    @include minwidth(992px) {
+ flex-wrap: wrap;
+ overflow-x: unset;
+                    }
+    .col-md-6{
+        padding-bottom: 20px;
+      min-width: 100%;
+    //   margin-right: 10px;
+      @include minwidth(600px) {
+  min-width: 48%;
+                           }
+      @include minwidth(992px) {
+  min-width: unset;
+                           }
+    }
+    img{
+        width: 90%;
+    }
+    .our_team_info{
+        padding-left: 20px; 
+        text-align: left;
+        .our_team_heading{       
+        padding: 10px 0px;
+        }
+        .card-text{
+            text-align: left;
+            padding-bottom: 10px;
+        }     
+    }
+}
+// critical problem page css end
