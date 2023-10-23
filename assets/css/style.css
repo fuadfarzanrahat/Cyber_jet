@@ -2099,4 +2099,106 @@ footer .footer_ending .container .bannar_text {
 .critical_problem_archive .our_team_info .card-text {
   text-align: left;
   padding-bottom: 10px;
+}
+
+.error_page {
+  padding: 50px 0px;
+}
+.error_page .container .row {
+  text-align: center;
+}
+.error_page .error_heding {
+  font-size: 28px;
+  font-family: "Roboto";
+  color: #bfc8e9;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 0px;
+  padding-bottom: 30px;
+}
+.error_page .page_not_found {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #000000;
+  line-height: 1.3;
+  text-align: center;
+  margin: 20px 0px;
+  font-weight: 600;
+}
+.error_page .this_page_not {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgba(78, 74, 74, 0.6352941176);
+  line-height: 1.3;
+  text-align: center;
+  margin: 20px 0px;
+}
+.error_page .btn_for_back {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #ffffff;
+  line-height: 1.3;
+  text-align: center;
+  background-color: rgb(69, 98, 114);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: inline-block;
+}
+.error_page .btn_for_back:hover {
+  background-color: rgba(69, 98, 114, 0.645);
+}
+.error_page .error_svg {
+  display: flex;
+  justify-content: center;
+}
+
+#handboy {
+  animation: swing ease-in-out 1.3s infinite alternate;
+  transform-origin: 98% 98%;
+  transform-box: fill-box;
+}
+
+#girllight {
+  animation: swing ease-in-out 1.3s infinite alternate;
+  transform-origin: 0% 97%;
+  transform-box: fill-box;
+}
+
+#hairgirl {
+  animation: swinghair ease-in-out 1.3s infinite alternate;
+  transform-origin: 60% 0%;
+  transform-box: fill-box;
+}
+
+#zero {
+  transform-origin: bottom;
+  transform-box: fill-box;
+  animation: zero ease-in-out 1.3s infinite alternate;
+}
+
+@keyframes zero {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: translate(-20deg);
+  }
+}
+@keyframes swinghair {
+  0% {
+    transform: rotate(12deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
 }/*# sourceMappingURL=style.css.map */
