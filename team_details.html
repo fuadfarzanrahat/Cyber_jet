@@ -162,18 +162,71 @@
                   <p class="team_member_details">Name: Latri Mera Basa </p>
                 </div>
                 <div class="team_details_innr_boxes">
-                  <p class="team_member_details"> About: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat qui, autem expedita ut quos! Tempore minus ipsam laudantium iure velit earum, modi inventore quod pariatur ut dolore dolorem odit. </p>
+                  <p class="team_member_details"> About: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                    placeat qui, autem expedita ut quos! Tempore minus ipsam laudantium iure velit earum, modi inventore
+                    quod pariatur ut dolore dolorem odit. </p>
                 </div>
                 <div class="team_details_innr_boxes">
                   <p class="team_member_details"> Cell: +256856685526985 </p>
                 </div>
                 <div class="team_details_innr_boxes">
-                  <div class="team_member_details"> Flow Us: 
-                    <a href="#" class="teamember_social_icon"><i class="fa-brands fa-facebook-f"></i></a> 
-                    <a href="#" class="teamember_social_icon"><i class="fa-brands fa-twitter"></i></a> 
-                    <a href="#" class="teamember_social_icon"><i class="fa-brands fa-instagram"></i></a> 
+                  <div class="team_member_details"> Flow Us:
+                    <a href="#" class="teamember_social_icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="teamember_social_icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="teamember_social_icon"><i class="fa-brands fa-instagram"></i></a>
                   </div>
                 </div>
+              </div>
+            </div>
+            <p class="team_member_details text_over_processbar"> About: Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Eaque placeat qui, autem expedita ut quos! Tempore minus ipsam laudantium iure velit
+              earum, modi inventore quod pariatur ut dolore dolorem odit. </p>
+            <div class="container">
+              <div class="skills row">
+                <div class="col-md-6">
+                  <!-- skill -->
+                  <div class="skill">
+                    <!-- title -->
+                    <div class="skill-title">
+                      Web Development
+                    </div>
+                    <!-- bar -->
+                    <div class="skill-bar" data-bar="90"><span></span></div>
+                  </div>
+                  <!-- #skill -->
+                  <!-- skill -->
+                  <div class="skill">
+                    <!-- title -->
+                    <div class="skill-title">
+                      Consulting
+                    </div>
+                    <!-- bar -->
+                    <div class="skill-bar" data-bar="70"><span></span></div>
+                  </div>
+                  <!-- #skill -->
+                </div>
+                <div class="col-md-6">
+                <!-- skill -->
+                <div class="skill">
+                  <!-- title -->
+                  <div class="skill-title">
+                    Branding & Identity
+                  </div>
+                  <!-- bar -->
+                  <div class="skill-bar" data-bar="60"><span></span></div>
+                </div>
+                <!-- #skill -->
+                <!-- skill -->
+                <div class="skill">
+                  <!-- title -->
+                  <div class="skill-title">
+                    Graphic Design
+                  </div>
+                  <!-- bar -->
+                  <div class="skill-bar" data-bar="80"><span></span></div>
+                </div>
+                <!-- #skill -->
+              </div>
               </div>
             </div>
           </div>
@@ -287,6 +340,22 @@
     }
   </script>
   <!-- dark mood js end -->
+  <!-- skill progress bar js start -->
+  <script>
+    $(".skills").addClass("active")
+    $(".skills .skill .skill-bar span").each(function () {
+      $(this).animate({
+        "width": $(this).parent().attr("data-bar") + "%"
+      }, 1000);
+      $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
+    });
+    setTimeout(function () {
+      $(".skills .skill .skill-bar span b").animate({
+        "opacity": "1"
+      }, 1000);
+    }, 2000);
+  </script>
+  <!-- skill progress bar js end -->
 
 </body>
 
