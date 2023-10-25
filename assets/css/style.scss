@@ -770,7 +770,6 @@ $bold:600;
 
                 i {
                     font-size: 12px;
-
                     @include minwidth(992px) {
                         font-size: 15px;
                     }
@@ -1096,7 +1095,7 @@ $bold:600;
             }
         }    
     }
-    .card-link {
+    .hire_view_details,.card-link{
         font-size: 16px;
         font-family: 'Roboto';
         color: $button_hover_color;
@@ -1115,7 +1114,6 @@ $bold:600;
             margin-left: 10px;
         }
     }
-
     .news_slidr_box {
         border-radius: 10px;
     }
@@ -1692,6 +1690,36 @@ footer {
     padding-bottom: 0px!important;
     .partner_overlay{
         padding-bottom: 0px;
+        a{
+            text-decoration: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        img{
+            &:hover{
+                opacity:.6;
+            }
+        }
+    }
+
+    .row .hire_view_details{
+        font-size: 16px;
+        font-family: 'Roboto';
+        color: $button_hover_color;
+        line-height: 1.5;
+        margin: 0px;
+        padding: 0px;
+        font-weight: 300;
+        text-decoration: none;
+        display: inline;
+        @include minwidth(992px) {
+            font-size: 18px;
+        }
+        .fa-angle-right {
+            font-size: 15px;
+            color: $button_hover_color;
+            margin-left: 10px;
+        }
     }
 }
 // testimonial section css start
@@ -2172,7 +2200,7 @@ footer {
     .our_team_info{
         padding-left: 20px; 
         text-align: left;
-        .our_team_heading{       
+       .our_team_heading{       
         padding: 10px 0px;
         }
         .card-text{
@@ -2289,3 +2317,47 @@ footer {
     }
 }
 // error page css end
+// team details page css start
+.team_details{
+    .lets_get_sec_overlay{
+        padding: 40px 0px;
+        .team_dtls_heding{
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            font-family: 'Roboto';
+            margin: 0px;
+            padding-bottom: 20px;
+            @include minwidth(600px) {
+                font-size: 30px;
+            }
+
+            @include minwidth(992px) {
+                font-size: 35px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+.team_details_box{
+    border: 1px solid $font_secondary_color;
+    border-radius: 20px;
+    .col-md-4{
+        position: relative;
+        .image_back{
+            width: 40%;
+            height: 200px;
+            background-color: $button_hover_color;
+            margin-left: -20px;
+            border-radius: 20px;
+        }
+       img{
+        width: 80%;
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
+        border-radius: 30px;
+       }
+    }
+}
+// team details page css end
