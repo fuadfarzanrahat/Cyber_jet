@@ -2414,11 +2414,17 @@ footer {
 // team details page css end
 // new contact page css start
 .new_contact{
+    .team_details_box{
+        padding: 10px;
+        @include minwidth(768px) {
+            padding: 30px;
+        }
+    }
     .col-md-12{
         align-items: center;
     }
     .col-md-5{
-        padding: 0px 10px 30px 0px;
+        padding: 0px 0px 30px 0px;
         @include minwidth(768px) {
             padding: 0px 40px 10px 0px;
         }
@@ -2535,20 +2541,31 @@ footer {
             #black_arrow{
                 content: ""; 
                 position: absolute; 
-                top: 43px; 
-                right: -24px;            
+                // top: 43px; 
+                right: 140px;            
                 width: 0; 
                 height: 0; 
                 border-top: 30px solid transparent;             
                 border-bottom: 30px solid transparent;             
-                border-left: 25px solid #000000;            
+                border-left: 25px solid #000000;  
+                rotate: 90deg;
+                @include minwidth(768px) {                  
+                    top: 43px; 
+                    right: -24px;   
+                    rotate: 0deg;
+                }          
             }
             .contact_top_hding_prent{
                 font-size: 16px;
                 color: #1582cf;      
                 font-family: 'Roboto';
-                margin: 0px;          
+                margin: 0px;       
+                padding-top: 20px;   
                 padding-bottom: 10px;
+                @include minwidth(768px) {                  
+                 padding-top: 0px;
+                }          
+
             }
             .contact_right_heding{
                 font-size: 22px;
@@ -2580,7 +2597,6 @@ footer {
                     @include minwidth(768px) {
                         width: 43%;
                         margin-left: 20px;
-
                     }
                 }
                 .contact_input_textarea{
@@ -2596,10 +2612,22 @@ footer {
                     width: 150px;
                     color: #000000;
                     margin-top: 20px;
+                    width: 90%;
                     &:hover{
                         background-color: #1d68e0;
                         color: #fff;
                     }
+                }
+            }
+            .col-md-7{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                @include minwidth(768px) {
+                   display: block;
+                   text-align: initial;
                 }
             }
 }

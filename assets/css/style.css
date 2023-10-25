@@ -2340,11 +2340,19 @@ footer .footer_ending .container .bannar_text {
   }
 }
 
+.new_contact .team_details_box {
+  padding: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .new_contact .team_details_box {
+    padding: 30px;
+  }
+}
 .new_contact .col-md-12 {
   align-items: center;
 }
 .new_contact .col-md-5 {
-  padding: 0px 10px 30px 0px;
+  padding: 0px 0px 30px 0px;
 }
 @media only screen and (min-width: 768px) {
   .new_contact .col-md-5 {
@@ -2469,20 +2477,33 @@ footer .footer_ending .container .bannar_text {
 .new_contact #black_arrow {
   content: "";
   position: absolute;
-  top: 43px;
-  right: -24px;
+  right: 140px;
   width: 0;
   height: 0;
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
   border-left: 25px solid #000000;
+  rotate: 90deg;
+}
+@media only screen and (min-width: 768px) {
+  .new_contact #black_arrow {
+    top: 43px;
+    right: -24px;
+    rotate: 0deg;
+  }
 }
 .new_contact .contact_top_hding_prent {
   font-size: 16px;
   color: #1582cf;
   font-family: "Roboto";
   margin: 0px;
+  padding-top: 20px;
   padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .new_contact .contact_top_hding_prent {
+    padding-top: 0px;
+  }
 }
 .new_contact .contact_right_heding {
   font-size: 22px;
@@ -2532,8 +2553,22 @@ footer .footer_ending .container .bannar_text {
   width: 150px;
   color: #000000;
   margin-top: 20px;
+  width: 90%;
 }
 .new_contact .contact_form input[type=submit]:hover {
   background-color: #1d68e0;
   color: #fff;
+}
+.new_contact .col-md-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .new_contact .col-md-7 {
+    display: block;
+    text-align: initial;
+  }
 }/*# sourceMappingURL=style.css.map */
