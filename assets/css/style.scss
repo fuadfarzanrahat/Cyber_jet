@@ -2012,9 +2012,11 @@ footer {
     }
     .side_bar_search{
         border: 0px;
+        border-radius: 50px;
         .tag_box{
             box-shadow:0px 0px 10px 2px var(--third-color);
             text-align: left;
+            border-radius: 30px;
             a{
                 position: relative;
                 i{
@@ -2170,6 +2172,7 @@ footer {
 // blog single page css end
 // critical problem page css start
 .critical_problem_solution{
+    background-color: #0000007c;
     .blog_side_bar{    
         margin-top: 0px;
         margin-bottom: auto;
@@ -2321,6 +2324,7 @@ footer {
 .team_details{
     .lets_get_sec_overlay{
         padding: 40px 0px;
+        background-color: #00000030;
         .team_dtls_heding{
             font-size: 20px;
             color: white;
@@ -2338,25 +2342,72 @@ footer {
             }
         }
     }
+    .team_details{
+        font-size: 20px;
+        color: #312d2d;      
+        font-family: 'Roboto';
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    .team_details_innr_boxes{
+        border: 1px solid #514b4b92;
+        padding: 10px;
+        margin-bottom: 15px;
+        .team_member_details{
+            font-size: 16px;
+            color: #312d2d;      
+            font-family: 'Roboto';
+            margin: 0px;   
+            .teamember_social_icon{
+               color: black;
+               margin-left: 10px;
+               &:hover{
+                color: #0ad3ef;
+               }            }       
+        }   
+    }
 }
 .team_details_box{
-    border: 1px solid $font_secondary_color;
+    border: 1px solid #514b4b92;
+    padding: 30px;
     border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
     .col-md-4{
-        position: relative;
+        position: relative;   
+        margin: auto;     
+        padding-bottom: 30px;
+        @include minwidth(768px) {
+           margin: initial;
+           padding-bottom: 0px;  
+        }
         .image_back{
-            width: 40%;
-            height: 200px;
-            background-color: $button_hover_color;
-            margin-left: -20px;
+            width: 150px;
+            height: 150px;           
+            background-color: $button_hover_color;         
             border-radius: 20px;
+            @include minwidth(768px) {  
+                position: absolute;           
+                bottom: -20px;    
+                left: -35px;
+                height: 385px;           
+            }
+            @include minwidth(992px) {
+                bottom: -32px;              
+            }
         }
        img{
-        width: 80%;
+        max-width: 200px;   
         position: absolute;
-        left: 10px;
-        bottom: 20px;
-        border-radius: 30px;
+        left: -20px;
+        top: 10px;
+        border-radius: 30px;   
+        @include minwidth(768px) {      
+            top: -20px;             
+        }
+        @include minwidth(992px) {
+            max-width: 300px;
+        }
        }
     }
 }
