@@ -2338,4 +2338,202 @@ footer .footer_ending .container .bannar_text {
   .team_details_box .col-md-4 img {
     max-width: 300px;
   }
+}
+
+.new_contact .col-md-12 {
+  align-items: center;
+}
+.new_contact .col-md-5 {
+  padding: 0px 10px 30px 0px;
+}
+@media only screen and (min-width: 768px) {
+  .new_contact .col-md-5 {
+    padding: 0px 40px 10px 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .new_contact .col-md-5 {
+    padding: 0px 70px 10px 0px;
+  }
+}
+.new_contact .contact_information {
+  background-color: #1d68e0;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.new_contact .short_text_contact, .new_contact .contact_information_hding {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Roboto";
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.new_contact .short_text_contact {
+  margin: 0px;
+  font-size: 13px;
+}
+.new_contact .contact_details_box {
+  border-left: 3px solid #fff;
+  padding: 10px 0px 10px 30px;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .new_contact .contact_details_box {
+    padding: 10px 0px 10px 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .new_contact .contact_details_box {
+    padding: 10px 0px 10px 30px;
+  }
+}
+.new_contact .call_this_now {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.new_contact .call_this_now .how_to_contact {
+  padding-left: 10px;
+}
+.new_contact .call_this_now .how_to_contact .short_text_contact {
+  padding: 0px;
+  margin: 0px;
+}
+.new_contact .your_location {
+  margin-bottom: 0px;
+}
+.new_contact .contact_icone {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.new_contact .contact_icone:hover {
+  background-color: #000000;
+  color: #fff;
+}
+.new_contact .folow_social_heding {
+  font-size: 15px;
+  color: #fff;
+  font-family: "Roboto";
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.new_contact .follow_social_icon {
+  display: flex;
+  flex-wrap: wrap;
+}
+.new_contact .follow_social_icon .contact_icone {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.new_contact .follow_social_icon .contact_icone i {
+  font-size: 12px;
+}
+.new_contact #arrow {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #ffffff;
+}
+@media only screen and (min-width: 768px) {
+  .new_contact #arrow {
+    top: 23px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #ffffff;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .new_contact #arrow {
+    top: 19px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #ffffff;
+  }
+}
+.new_contact #black_arrow {
+  content: "";
+  position: absolute;
+  top: 43px;
+  right: -24px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 25px solid #000000;
+}
+.new_contact .contact_top_hding_prent {
+  font-size: 16px;
+  color: #1582cf;
+  font-family: "Roboto";
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.new_contact .contact_right_heding {
+  font-size: 22px;
+  color: #000000;
+  font-family: "Roboto";
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.new_contact .contact_short_txt {
+  font-size: 14px;
+  color: #736a6a;
+  font-family: "Roboto";
+  margin: 0px;
+  padding-bottom: 20px;
+}
+.new_contact .contact_form input {
+  padding: 10px;
+  width: 90%;
+  background-color: unset;
+  border: 1px solid #736a6a;
+  border-radius: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .new_contact .contact_form input {
+    width: 43%;
+  }
+}
+.new_contact .contact_form input[type=email] {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .new_contact .contact_form input[type=email] {
+    width: 43%;
+    margin-left: 20px;
+  }
+}
+.new_contact .contact_form .contact_input_textarea {
+  padding-top: 20px;
+}
+.new_contact .contact_form .contact_input_textarea textarea {
+  padding: 10px;
+  background-color: unset;
+  border-radius: 5px;
+  width: 90%;
+}
+.new_contact .contact_form input[type=submit] {
+  width: 150px;
+  color: #000000;
+  margin-top: 20px;
+}
+.new_contact .contact_form input[type=submit]:hover {
+  background-color: #1d68e0;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

@@ -2412,3 +2412,195 @@ footer {
     }
 }
 // team details page css end
+// new contact page css start
+.new_contact{
+    .col-md-12{
+        align-items: center;
+    }
+    .col-md-5{
+        padding: 0px 10px 30px 0px;
+        @include minwidth(768px) {
+            padding: 0px 40px 10px 0px;
+        }
+        @include minwidth(992px) {
+            padding: 0px 70px 10px 0px;
+        }
+    }
+    .contact_information{
+        background-color: #1d68e0;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        // @include minwidth(px) {
+        //     max-width: 300px;
+        // }
+    }
+    .short_text_contact, .contact_information_hding{
+        font-size: 16px;
+        color: #fff;      
+        font-family: 'Roboto';
+        margin: 0px;   
+        padding-bottom: 10px;
+    }
+    .short_text_contact{
+        margin: 0px;
+        font-size: 13px;
+    }
+    .contact_details_box{
+        border-left: 3px solid #fff;
+        padding: 10px 0px 10px 30px;   
+        position: relative;  
+        @include minwidth(768px) {
+            padding: 10px 0px 10px 20px;  
+        }
+        @include minwidth(992px) {
+            padding: 10px 0px 10px 30px;  
+        }
+    }
+    .call_this_now{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+        .how_to_contact{
+            padding-left: 10px;
+            .short_text_contact{
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+    }
+    .your_location{
+        margin-bottom: 0px;
+    }
+    .contact_icone{
+        padding: 5px;
+        border-radius: 50%;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: #000000;
+            color: #fff;
+        }
+    }
+    .folow_social_heding{
+        font-size: 15px;
+        color: #fff;      
+        font-family: 'Roboto';
+        margin: 0px;  
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .follow_social_icon{
+        display: flex;
+        flex-wrap: wrap;
+        .contact_icone{
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+        #arrow{ 
+            content: ""; 
+            position: absolute; 
+            top: 19px;    
+            left: 0px;         
+            width: 0; 
+            height: 0; 
+            border-top: 15px solid transparent;             
+            border-bottom: 15px solid transparent;             
+            border-left: 15px solid #ffffff;;
+            @include minwidth(768px) {
+                top: 23px;
+                border-top: 10px solid transparent;             
+                border-bottom: 10px solid transparent;             
+                border-left: 10px solid #ffffff;    
+            }
+            @include minwidth(992px) { 
+                top: 19px;                 
+                border-top: 15px solid transparent;             
+                border-bottom: 15px solid transparent;             
+                border-left: 15px solid #ffffff;
+    
+            }
+            }
+            #black_arrow{
+                content: ""; 
+                position: absolute; 
+                top: 43px; 
+                right: -24px;            
+                width: 0; 
+                height: 0; 
+                border-top: 30px solid transparent;             
+                border-bottom: 30px solid transparent;             
+                border-left: 25px solid #000000;            
+            }
+            .contact_top_hding_prent{
+                font-size: 16px;
+                color: #1582cf;      
+                font-family: 'Roboto';
+                margin: 0px;          
+                padding-bottom: 10px;
+            }
+            .contact_right_heding{
+                font-size: 22px;
+                color: #000000;      
+                font-family: 'Roboto';
+                margin: 0px;
+                padding-bottom: 10px;
+            }
+            .contact_short_txt{
+                font-size: 14px;
+                color: #736a6a;      
+                font-family: 'Roboto';
+                margin: 0px;     
+                padding-bottom: 20px;      
+            }
+            .contact_form{
+                input{
+                    padding: 10px;   
+                    width: 90%;
+                    background-color: unset;
+                    border: 1px solid #736a6a;
+                    border-radius: 5px;
+                    @include minwidth(768px) {
+                        width: 43%;
+                    }
+                }
+                input[type='email']{
+                    margin-top: 20px;
+                    @include minwidth(768px) {
+                        width: 43%;
+                        margin-left: 20px;
+
+                    }
+                }
+                .contact_input_textarea{
+                    padding-top: 20px;
+                    textarea{
+                        padding: 10px;
+                        background-color: unset;
+                        border-radius: 5px;
+                        width: 90%;
+                    }
+                }
+                input[type='submit']{
+                    width: 150px;
+                    color: #000000;
+                    margin-top: 20px;
+                    &:hover{
+                        background-color: #1d68e0;
+                        color: #fff;
+                    }
+                }
+            }
+}
+// new contact page css end
